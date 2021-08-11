@@ -11,13 +11,83 @@
 
 ul {
   text-transform: uppercase;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 1.5em 0 1.5em 0;
 }
 
 h1, h2, h3 {
   font-family: 'DM Serif Display';
 }
 
+a {
+  text-decoration: none;
+  color: #2d2640;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  color: #837d87;
+  margin: 2.5em 0 2.5em 0;
+}
+
 #menu {
   display: none;
+}
+
+.different h2 {
+  color: #2d2640;
+}
+
+.different h3 {
+  margin: 2em 0 1em 0;
+  color: #2d2640;
+}
+
+.different p {
+  margin-bottom: 3em;
+  color: #837d87;
+}
+
+.humanizing {
+  background-image: url("/images/bg-pattern-intro-left-mobile.svg"), url("/images/bg-pattern-intro-right-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: #2d2640;
+}
+
+aside {
+  background-image: url("/images/image-intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: #2d2640;
+}
+
+aside h2 {
+  color: white;
+}
+
+footer div img:hover {
+  -webkit-filter: brightness(39%);
+          filter: brightness(39%);
+  cursor: pointer;
+}
+
+button {
+  padding: 0.7em 1.2em;
+  color: white;
+  background-color: #2d2640;
+  border-color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #2d2640;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

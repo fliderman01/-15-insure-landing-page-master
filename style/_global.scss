@@ -8,12 +8,64 @@
 
 ul {
     text-transform: uppercase;
+    list-style-type:  none;
+    li {
+        margin: 1.5em 0 1.5em 0;
+    }
 }
 
 h1, h2, h3 {
     font-family: 'DM Serif Display';
 }
 
+a {
+   text-decoration: none; 
+   color: hsl(256, 26%, 20%);
+   font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+h4 {
+    color:hsl(273, 4%, 51%);
+    margin: 2.5em 0 2.5em 0;
+}
+
 #menu {
     display: none;
+}
+.different {
+    h2 {
+        color:hsl(256, 26%, 20%);
+    }
+    h3 {
+        margin: 2em 0 1em 0;
+        color:hsl(256, 26%, 20%)
+    }
+    p {
+        margin-bottom: 3em;
+        color:hsl(273, 4%, 51%);
+    }
+}
+.humanizing {
+    background-image: url('/images/bg-pattern-intro-left-mobile.svg'), url('/images/bg-pattern-intro-right-mobile.svg');
+    background-repeat: no-repeat;
+    background-color:hsl(256, 26%, 20%);
+}
+aside {
+    background-image: url('/images/image-intro-mobile.jpg');
+    background-repeat: no-repeat;
+    background-color:hsl(256, 26%, 20%);
+    h2 {
+        color: white;
+    }
+}
+
+footer {
+    div {
+        img:hover {
+            filter: brightness(39%);
+            cursor: pointer;
+        }
+    }
 }
