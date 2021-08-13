@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,24 +13,27 @@
 ul {
   text-transform: uppercase;
   list-style-type: none;
+  text-align: center;
 }
 
 ul li {
   margin: 1.5em 0 1.5em 0;
 }
 
+p {
+  text-align: center;
+}
+
 h1, h2, h3 {
-  font-family: 'DM Serif Display';
+  font-family: serif;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+  text-align: center;
   color: #2d2640;
   font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 h4 {
@@ -37,8 +41,16 @@ h4 {
   margin: 2.5em 0 2.5em 0;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 #menu {
   display: none;
+}
+
+#menu a:active {
+  border: 1px solid white;
 }
 
 .different h2 {
@@ -55,15 +67,51 @@ h4 {
   color: #837d87;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.3em;
+}
+
+.humanizing, .different, aside, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .humanizing {
   background-image: url("/images/bg-pattern-intro-left-mobile.svg"), url("/images/bg-pattern-intro-right-mobile.svg");
   background-repeat: no-repeat;
+  background-position: left bottom, right 19em;
   background-color: #2d2640;
+  color: white;
+}
+
+hr {
+  opacity: 0.4;
+  margin: 0em 2em 0 2em;
+}
+
+.hr {
+  opacity: 0.8;
+  margin: 2em 6.5em 2em 6.5em;
 }
 
 aside {
-  background-image: url("/images/image-intro-mobile.jpg");
+  background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
   background-repeat: no-repeat;
+  background-position: right bottom;
   background-color: #2d2640;
 }
 
@@ -75,6 +123,10 @@ footer div img:hover {
   -webkit-filter: brightness(39%);
           filter: brightness(39%);
   cursor: pointer;
+}
+
+footer div img {
+  margin: 2em 0.4em 1em 0.4em;
 }
 
 button {
@@ -89,5 +141,10 @@ button:hover {
   background-color: white;
   color: #2d2640;
   font-weight: bold;
+}
+
+#burger {
+  padding: 0;
+  border-radius: 0;
 }
 /*# sourceMappingURL=style.css.map */
